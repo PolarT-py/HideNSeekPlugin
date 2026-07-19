@@ -15,6 +15,12 @@ scoreboard objectives add hns_duration dummy
 # Init Time left of the current game
 scoreboard objectives add hns_time_left dummy
 
+# Init Final Time before hiders get glowing and stuff
+scoreboard objectives add hns_final_time dummy
+
+# Init Final Time Flag to only execute Final commands once
+scoreboard objectives add hns_final_time_flag dummy
+
 
 # Set Hide n Seek Scoreboard values
 
@@ -31,3 +37,13 @@ scoreboard players set #game hns_duration 300
 
 # Set Time Left to same as Game Duration
 scoreboard players set #game hns_time_left 300
+
+# Set Final Time to last 20 Seconds
+scoreboard players set #game hns_final_time 20
+
+# Set Final Time Flag to 0
+scoreboard players set #game hns_final_time_flag 0
+
+# Print Message
+tellraw @a {"text": "! Hide n Seek Datapack Initialized", "bold": true}
+tellraw @a {"text": "- Values reset to Default"}
