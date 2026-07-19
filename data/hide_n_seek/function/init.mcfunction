@@ -74,6 +74,11 @@ scoreboard players set #game hns_current_map 0
 scoreboard players set #game hns_max_votes 0
 scoreboard players set #game hns_winner_found 0
 
+
+# Clear Seeker and Eliminated tags from everyone
+tag @a remove seeker
+tag @a remove eliminated
+
 # Print Initialization complete Message
 tellraw @a {"text": "! Hide n Seek Datapack Initialized", "bold": true}
 tellraw @a {"text": "- Values reset to Default"}
