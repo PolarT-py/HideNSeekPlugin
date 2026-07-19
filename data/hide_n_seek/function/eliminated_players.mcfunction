@@ -2,7 +2,7 @@
 
 
 # Set player as eliminated if they died
-execute if score #game game_running matches 1 as @a[scores={deathCount=1..},distance=70..,x=241,y=-47,z=83] run tag @s add eliminated
+execute if score #game hns_state matches 1 as @a[scores={deathCount=1..},distance=70..,x=241,y=-47,z=83] run tag @s add eliminated
 
 # Show subtitles +15 seconds to time left after a hider elimination
 execute as @a[scores={deathCount=1..},tag=!seeker] if score #game hns_state matches 1 run tellraw @a {"text":"Seeker kill — +15 seconds bonus!","bold":true,"underlined":true,"color":"red"}
