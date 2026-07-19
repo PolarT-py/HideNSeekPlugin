@@ -1,5 +1,6 @@
 # Help page, help printed into chat when ran
 
+
 tellraw @a {"text": ""}
 tellraw @a {"text": ""}
 tellraw @a {"text": " -- Help Page -- ","color": "gold", "bold": true}

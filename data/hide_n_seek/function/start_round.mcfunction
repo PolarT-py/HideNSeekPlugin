@@ -35,30 +35,29 @@ kill @e[type=item,name=Emerald]
 
 
 # TP Players to their designated spots
-# (Note to self: Goal is to replace all old global with #game)
 
 
 # TP Hiders: Map 1
-execute if score global CurrentMap matches 1 run tp @a[tag=!seeker] 10 -60 -49
+execute if score #game hns_current_map matches 1 run tp @a[tag=!seeker] 10 -60 -49
 # TP Seekers: Map 1
-execute if score global CurrentMap matches 1 run tp @a[tag=seeker] 10 -33 -49.5
+execute if score #game hns_current_map matches 1 run tp @a[tag=seeker] 10 -33 -49.5
 
 # TP Hiders: Map 2
-execute if score global CurrentMap matches 2 run tp @a[tag=!seeker] 366 -38 223
+execute if score #game hns_current_map matches 2 run tp @a[tag=!seeker] 366 -38 223
 # TP Seekers: Map 2
-execute if score global CurrentMap matches 2 run tp @a[tag=seeker] 370 -37 226
+execute if score #game hns_current_map matches 2 run tp @a[tag=seeker] 370 -37 226
 
 # TP Hiders: Map 3
-execute if score global CurrentMap matches 3 run tp @a[tag=!seeker] 545 -33 -56
+execute if score #game hns_current_map matches 3 run tp @a[tag=!seeker] 545 -33 -56
 # TP Seekers: Map 3
-execute if score global CurrentMap matches 3 run tp @a[tag=seeker] 504 -39 -12
+execute if score #game hns_current_map matches 3 run tp @a[tag=seeker] 504 -39 -12
 
 # TP Hiders: Map 4
-execute if score global CurrentMap matches 4 run tp @a[tag=!seeker] 680 -2.5 278
+execute if score #game hns_current_map matches 4 run tp @a[tag=!seeker] 680 -2.5 278
 # TP Seekers: Map 4
-execute if score global CurrentMap matches 4 run tp @a[tag=seeker] 656 -32 279
+execute if score #game hns_current_map matches 4 run tp @a[tag=seeker] 656 -32 279
 
 # TP Hiders: Map 5
-execute if score global CurrentMap matches 5 run tp @a[tag=!seeker] 905.97 -23.00 -578.14 990.95 9.09
+execute if score #game hns_current_map matches 5 run tp @a[tag=!seeker] 905.97 -23.00 -578.14 990.95 9.09
 # TP Seekers: Map 5
-execute if score global CurrentMap matches 5 run tp @a[tag=seeker] 900.07 -14.00 -609.91 2.06 11.02
+execute if score #game hns_current_map matches 5 run tp @a[tag=seeker] 900.07 -14.00 -609.91 2.06 11.02

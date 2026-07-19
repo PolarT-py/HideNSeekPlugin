@@ -21,6 +21,21 @@ scoreboard objectives add hns_final_time dummy
 # Init Final Time Flag to only execute Final commands once
 scoreboard objectives add hns_final_time_flag dummy
 
+# Init Map Votes
+scoreboard objectives add hns_Map1_Votes dummy
+scoreboard objectives add hns_Map2_Votes dummy
+scoreboard objectives add hns_Map3_Votes dummy
+scoreboard objectives add hns_Map4_Votes dummy
+scoreboard objectives add hns_Map5_Votes dummy
+scoreboard objectives add hns_Map6_Votes dummy
+
+# Init Current Map
+scoreboard objectives add hns_current_map dummy
+
+# Init Map Voting Things
+scoreboard objectives add hns_max_votes dummy
+scoreboard objectives add hns_winner_found dummy
+
 
 # Set Hide n Seek Scoreboard values
 
@@ -44,6 +59,21 @@ scoreboard players set #game hns_final_time 20
 # Set Final Time Flag to 0
 scoreboard players set #game hns_final_time_flag 0
 
-# Print Message
+# Set Map Votes to 0
+scoreboard players set #game hns_Map1_Votes 0
+scoreboard players set #game hns_Map2_Votes 0
+scoreboard players set #game hns_Map3_Votes 0
+scoreboard players set #game hns_Map4_Votes 0
+scoreboard players set #game hns_Map5_Votes 0
+scoreboard players set #game hns_Map6_Votes 0
+
+# Set Current Map to 0
+scoreboard players set #game hns_current_map 0
+
+# Set Map Voter Things to 0
+scoreboard players set #game hns_max_votes 0
+scoreboard players set #game hns_winner_found 0
+
+# Print Initialization complete Message
 tellraw @a {"text": "! Hide n Seek Datapack Initialized", "bold": true}
 tellraw @a {"text": "- Values reset to Default"}
