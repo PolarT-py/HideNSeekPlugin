@@ -15,3 +15,6 @@ execute if score #game hns_time_left matches ..0 run function hide_n_seek:hiders
 
 # If there is no more Hiders alive, then run end_round (seekers win)
 execute unless entity @a[tag=!seeker,tag=!eliminated] run function hide_n_seek:seekers_win
+
+# Issue: When a match ends and everyone dies, they all get seeker tag
+# Temp Fix: Remove seeker tag in kit selector when they select hider
