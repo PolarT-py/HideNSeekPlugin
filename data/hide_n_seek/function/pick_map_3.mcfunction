@@ -8,4 +8,4 @@ scoreboard players set #game hns_current_map 3
 scoreboard players set #game hns_winner_found 3
 
 # Announce Winner Map
-tellraw @a {"text": "- Map 3 (The Mall) Wins!", "bold": true}
+tellraw @a {"text":"- Map 3 (","bold":true,"extra":[{"text":"The Mall","color":"gray"},{"text":") Wins!"}]}
