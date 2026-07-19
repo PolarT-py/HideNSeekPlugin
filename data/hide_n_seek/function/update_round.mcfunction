@@ -14,5 +14,4 @@ execute if score #game hns_time_left <= #game hns_final_time if score #game hns_
 execute unless entity @a[tag=!seeker,tag=!eliminated] run function hide_n_seek:seekers_win
 
 # If the Time is or less than 0, then run end_round (hiders win)
-execute if score #game hns_time_left matches ..0 run function hide_n_seek:end_round
-# Add actual hider win later
+execute if score #game hns_time_left matches ..0 run function hide_n_seek:hiders_win
