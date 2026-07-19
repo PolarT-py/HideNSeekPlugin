@@ -2,7 +2,7 @@
 
 
 # Show Finals Title
-title @a actionbar {"text":"Last ","extra":[{"score":{"name":"#game","objective":"hns_final_time"}},{"text":" seconds!"}]}
+title @a title {"text":"Last ","extra":[{"score":{"name":"#game","objective":"hns_final_time"}},{"text":" seconds!"}]}
 
 # Show Finals Subtitle
 title @a subtitle "Hiders get the glowing effect"
