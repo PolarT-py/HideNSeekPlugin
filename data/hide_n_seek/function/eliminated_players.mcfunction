@@ -1,7 +1,7 @@
 # Run to check for eliminations of hiders
 
 
-# Set player as eliminated
+# Set player as eliminated if they died
 execute if score #game game_running matches 1 as @a[scores={deathCount=1..},distance=70..,x=241,y=-47,z=83] run tag @s add eliminated
 
 # Show subtitles +15 seconds to time left after a hider elimination
