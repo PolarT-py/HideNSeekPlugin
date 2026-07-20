@@ -9,8 +9,8 @@ scoreboard players set #game hns_1_sec_signal 0
 execute if score #game hns_1_sec_timer matches 20 run scoreboard players set #game hns_1_sec_signal 1
 execute if score #game hns_1_sec_timer matches 20 run scoreboard players set #game hns_1_sec_timer 0
 
-# If there is a 1 second signal and game running is true, then update the round
-execute if score #game hns_1_sec_signal matches 1 if score #game hns_state matches 1 run function hide_n_seek:update_round
-
 # Check for eliminations
 function hide_n_seek:eliminated_players
+
+# If there is a 1 second signal and game running is true, then update the round
+execute if score #game hns_1_sec_signal matches 1 if score #game hns_state matches 1 run function hide_n_seek:update_round
