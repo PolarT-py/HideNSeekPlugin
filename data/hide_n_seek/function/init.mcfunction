@@ -28,6 +28,8 @@ scoreboard objectives add hns_Map3_Votes dummy
 scoreboard objectives add hns_Map4_Votes dummy
 scoreboard objectives add hns_Map5_Votes dummy
 scoreboard objectives add hns_Map6_Votes dummy
+scoreboard objectives add hns_Map7_Votes dummy
+scoreboard objectives add hns_Map8_Votes dummy
 
 # Init Current Map
 scoreboard objectives add hns_current_map dummy
@@ -66,6 +68,8 @@ scoreboard players set #game hns_Map3_Votes 0
 scoreboard players set #game hns_Map4_Votes 0
 scoreboard players set #game hns_Map5_Votes 0
 scoreboard players set #game hns_Map6_Votes 0
+scoreboard players set #game hns_Map7_Votes 0
+scoreboard players set #game hns_Map8_Votes 0
 
 # Set Current Map to 0
 scoreboard players set #game hns_current_map 0

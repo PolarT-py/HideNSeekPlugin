@@ -8,4 +8,4 @@ scoreboard players set #game hns_current_map 6
 scoreboard players set #game hns_winner_found 6
 
 # Announce Winner Map
-tellraw @a {"text": "- Map 6 (Jungle Temple) Wins!", "bold": true}
+tellraw @a {"text": "- Map 6 (Ancient Temple) Wins!", "bold": true}
