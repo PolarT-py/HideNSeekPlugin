@@ -68,9 +68,9 @@ execute if score #game hns_current_map matches 6 run tp @a[tag=!seeker] 0 0 0
 execute if score #game hns_current_map matches 6 run tp @a[tag=seeker] 0 0 0
 
 # TP Hiders: Map 7
-execute if score #game hns_current_map matches 7 run tp @a[tag=!seeker] 0 0 0
+execute if score #game hns_current_map matches 7 run tp @a[tag=!seeker] -621.31 -49.06 123.27 -1211.14 6.23
 # TP Seekers: Map 7
-execute if score #game hns_current_map matches 7 run tp @a[tag=seeker] 0 0 0
+execute if score #game hns_current_map matches 7 run tp @a[tag=seeker] -567.08 -49.00 98.53 -990.38 12.72
 
 # TP Hiders: Map 8
 execute if score #game hns_current_map matches 8 run tp @a[tag=!seeker] -211.05 -16.00 613.69 90.20 20.88
