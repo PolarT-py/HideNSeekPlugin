@@ -7,6 +7,9 @@ scoreboard players remove #game hns_time_left 1
 # Update Time Left indicator in the action bar
 title @a actionbar {"text":"Time Left: ","color":"gold","extra":[{"score":{"name":"#game","objective":"hns_time_left"},"color":"yellow"},{"text":" seconds","color":"gold"}]}
 
+# Clear Empty Bottles from all players SO THEY DON'T LITTER
+clear @a minecraft:glass_bottle
+
 # Check for final moments if time left is <= final time and final time is flagged
 execute if score #game hns_time_left <= #game hns_final_time if score #game hns_final_time_flag matches 1 run function hide_n_seek:final
 

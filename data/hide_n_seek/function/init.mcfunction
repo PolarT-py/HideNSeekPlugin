@@ -38,6 +38,9 @@ scoreboard objectives add hns_current_map dummy
 scoreboard objectives add hns_max_votes dummy
 scoreboard objectives add hns_winner_found dummy
 
+# Init Seeker Kill Bonus Time
+scoreboard objectives add hns_kill_bonus_time dummy
+
 
 # Set Hide n Seek Scoreboard values
 
@@ -78,6 +81,16 @@ scoreboard players set #game hns_current_map 0
 scoreboard players set #game hns_max_votes 0
 scoreboard players set #game hns_winner_found 0
 
+# Set Seeker Kill Bonus Time to 15
+scoreboard players set #game hns_kill_bonus_time 15
+
+
+# Finishing off
+
+
+# Create Teams
+team add seekers Seekers
+team add hiders Hiders
 
 # Clear Seeker and Eliminated tags from everyone
 tag @a remove seeker

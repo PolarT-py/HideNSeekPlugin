@@ -33,6 +33,9 @@ effect give @a minecraft:instant_health 3 25 true
 # Remove all emeralds
 kill @e[type=item,name=Emerald]
 
+# Clear Useless Items like Echo Shards and Empty Bottles
+clear @a minecraft:echo_shard
+clear @a minecraft:glass_bottle
 
 # TP Players to their designated spots
 
