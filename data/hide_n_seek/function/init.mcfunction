@@ -93,8 +93,8 @@ team add seekers Seekers
 team add hiders Hiders
 
 # Clear Seeker and Eliminated tags from everyone
-tag @a remove seeker
-tag @a remove eliminated
+# tag @a remove seeker
+# tag @a remove eliminated
 
 # Print Initialization complete Message
 tellraw @a {"text": "! Hide n Seek Datapack Initialized", "bold": true}
