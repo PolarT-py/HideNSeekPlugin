@@ -1,7 +1,7 @@
 # Help page, help printed into chat when ran.
 
 tellraw @a {"text": ""}
-tellraw @a [{"text": "▬▬▬▬▬▬▬▬▬ ","color": "dark_gray","strikethrough": true},{"text": " Hide n Seek Help ","color": "gold","bold": true},{"text": " ▬▬▬▬▬▬▬▬▬","color": "dark_gray","strikethrough": true}]
+tellraw @a [{"text": "▬▬▬▬▬▬▬▬▬ ","color": "dark_gray","strikethrough": true},{"text": " Hide n Seek Help ","color": "gold","bold": true,"strikethrough": false},{"text": " ▬▬▬▬▬▬▬▬▬","color": "dark_gray","strikethrough": true}]
 tellraw @a {"text": ""}
 
 # --- Player Tags ---
@@ -45,10 +45,11 @@ tellraw @a [{"text": " Name: ","color": "gray"},{"text": "hns:time_left","color"
 tellraw @a [{"text": " Style: ","color": "gray"},{"text": "notched_20, color green","color": "white"}]
 tellraw @a {"text": ""}
 
-# --- Teams ---
+# --- Teams State Values ---
 tellraw @a {"text": "Teams","color": "aqua", "bold": true}
 tellraw @a [{"text": " Seekers ","color": "red","bold": true},{"text": "- always visible nametags, no friendly fire","color": "dark_gray"}]
 tellraw @a [{"text": " Hiders ","color": "white","bold": true},{"text": "- hidden nametags from other teams, no friendly fire","color": "dark_gray"}]
+tellraw @a [{"text": " Spies ","color": "dark_red","bold": true},{"text": "- always visible nametags, no friendly fire","color": "dark_gray"}]
 tellraw @a {"text": ""}
 
 tellraw @a [{"text": "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬","color": "dark_gray","strikethrough": true}]
