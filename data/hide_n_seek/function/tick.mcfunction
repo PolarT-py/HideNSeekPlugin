@@ -14,3 +14,6 @@ function hide_n_seek:eliminated_players
 
 # If there is a 1 second signal and game running is true, then update the round
 execute if score #game hns_1_sec_signal matches 1 if score #game hns_state matches 1 run function hide_n_seek:update_round
+
+# If there is a 1 second signal and game running is false, then update not round
+execute if score #game hns_1_sec_signal matches 1 if score #game hns_state matches 0 run function hide_n_seek:update_not_round

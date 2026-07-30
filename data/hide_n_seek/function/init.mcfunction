@@ -88,14 +88,41 @@ scoreboard players set #game hns_kill_bonus_time 15
 # Finishing off
 
 
+# Add bossbar
+bossbar add hns:time_left "Round Progress"
+
+# Configure Bossbar to default
+bossbar set hns:time_left color red
+bossbar set hns:time_left visible false
+bossbar set hns:time_left max 300
+bossbar set hns:time_left style notched_20
+
 # Create Teams
 team add seekers Seekers
 team add hiders Hiders
+team add spy Spy
+
+# Configure Teams
+team modify hiders color white
+team modify seekers color red
+team modify spy color red
+
+team modify hiders nametagVisibility hideForOtherTeams
+team modify seekers nametagVisibility always
+team modify spy nametagVisibility always
+
+team modify hiders seeFriendlyInvisibles true
+team modify seekers seeFriendlyInvisibles true
+team modify spy seeFriendlyInvisibles true
+
+team modify hiders friendlyFire false
+team modify seekers friendlyFire false
+team modify spy friendlyFire false
 
 # Clear Seeker and Eliminated tags from everyone
 # tag @a remove seeker
 # tag @a remove eliminated
 
-# Print Initialization complete Message
+# Print Post Initialization Message
 tellraw @a {"text": "! Hide n Seek Datapack Initialized", "bold": true}
 tellraw @a {"text": "- Values reset to Default"}

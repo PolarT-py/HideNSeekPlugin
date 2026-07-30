@@ -14,6 +14,16 @@ scoreboard players set #game hns_1_sec_signal 0
 # Set Time left to Duration
 scoreboard players operation #game hns_time_left = #game hns_duration
 
+# Make Time Left bossbar visible to everyone
+bossbar set hns:time_left visible true
+bossbar set hns:time_left players @a
+
+# Set Time Left bossbar max to duration
+execute store result bossbar hns:time_left max run scoreboard players get #game hns_duration
+
+# Set Time Left bossbar value to time_left
+execute store result bossbar hns:time_left value run scoreboard players get #game hns_time_left
+
 # Set Game State to 1 (running)
 scoreboard players set #game hns_state 1
 
@@ -36,6 +46,7 @@ kill @e[type=item,name=Emerald]
 # Clear Useless Items like Echo Shards and Empty Bottles
 clear @a minecraft:echo_shard
 clear @a minecraft:glass_bottle
+kill @e[type=item,name="Glass Bottle"]
 
 # TP Players to their designated spots
 
@@ -71,9 +82,9 @@ execute if score #game hns_current_map matches 6 run tp @a[tag=!seeker] 0 0 0
 execute if score #game hns_current_map matches 6 run tp @a[tag=seeker] 0 0 0
 
 # TP Hiders: Map 7
-execute if score #game hns_current_map matches 7 run tp @a[tag=!seeker] -621.31 -49.06 123.27 -1211.14 6.23
+execute if score #game hns_current_map matches 7 run tp @a[tag=!seeker] -563.30 -48.00 98.48 89.76 5.23
 # TP Seekers: Map 7
-execute if score #game hns_current_map matches 7 run tp @a[tag=seeker] -567.08 -49.00 98.53 -990.38 12.72
+execute if score #game hns_current_map matches 7 run tp @a[tag=seeker] -596.70 -56.00 97.58 -91.02 3.23
 
 # TP Hiders: Map 8
 execute if score #game hns_current_map matches 8 run tp @a[tag=!seeker] -211.05 -16.00 613.69 90.20 20.88

@@ -7,8 +7,14 @@ scoreboard players set #game hns_state 0
 # Set hns_time_left to flat 0
 scoreboard players set #game hns_time_left 0
 
+# Make Bossbar not visible
+bossbar set hns:time_left visible false
+
 # Clear Seeker tag from All Players
 tag @a remove seeker
+
+# Make Everyone hiders team
+team join hiders @a
 
 # Clear eliminated tag from All Players
 tag @a remove eliminated

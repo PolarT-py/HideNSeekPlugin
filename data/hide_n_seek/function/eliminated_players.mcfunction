@@ -12,6 +12,7 @@ execute as @a[scores={deathCount=1..},tag=!seeker] if score #game hns_state matc
 
 # Set Eliminated Player as seeker
 execute as @a[scores={deathCount=1..},tag=!seeker] if score #game hns_state matches 1 run tag @s add seeker
+execute as @a[scores={deathCount=1..},tag=!seeker] if score #game hns_state matches 1 run team join seekers @s
 
 # Reset Deathcount of scoreboard for everyone
 scoreboard players reset @a deathCount
