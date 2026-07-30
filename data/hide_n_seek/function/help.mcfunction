@@ -42,7 +42,7 @@ tellraw @a {"text": ""}
 # --- Bossbar Info ---
 tellraw @a {"text": "Bossbar","color": "aqua", "bold": true}
 tellraw @a [{"text": " Name: ","color": "gray"},{"text": "hns:time_left","color": "green"}]
-tellraw @a [{"text": " Style: ","color": "gray"},{"text": "notched_20, color green","color": "white"}]
+tellraw @a [{"text": " Style: ","color": "gray"},{"text": "notched_20, color red","color": "white"}]
 tellraw @a {"text": ""}
 
 # --- Teams State Values ---
