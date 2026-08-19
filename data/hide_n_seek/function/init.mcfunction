@@ -47,6 +47,7 @@ scoreboard objectives add hns_player_id dummy
 # Init Next Player ID
 scoreboard objectives add hns_next_player_id dummy
 
+
 # Set Hide n Seek Scoreboard values
 
 
@@ -94,6 +95,10 @@ scoreboard players set #game hns_next_player_id 1
 
 
 # Finishing off
+
+
+# Clear everyone's Player ID
+scoreboard players set @a hns_player_id 0
 
 
 # Add bossbar
