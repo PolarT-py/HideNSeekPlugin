@@ -9,6 +9,7 @@ tellraw @a {"text": "Player Tags","color": "aqua", "bold": true}
 tellraw @a [{"text": " • ","color": "dark_gray"},{"text": "seeker","color": "red"}]
 tellraw @a [{"text": " • ","color": "dark_gray"},{"text": "eliminated","color": "gray"}]
 tellraw @a [{"text": " • ","color": "dark_gray"},{"text": "Assasin","color": "dark_red"}]
+tellraw @a [{"text": " • ","color": "dark_gray"},{"text": "CanVote","color": "dark_red"}]
 tellraw @a {"text": ""}
 
 # --- Maps ---

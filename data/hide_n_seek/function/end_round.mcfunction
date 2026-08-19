@@ -22,6 +22,9 @@ tag @a remove eliminated
 # Clear other tags from All Players
 tag @a remove Assasin
 
+# Give All Players CanVote tag
+tag @a add CanVote
+
 # Clear Effects from All Players
 effect clear @a
 
