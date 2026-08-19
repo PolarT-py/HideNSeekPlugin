@@ -41,6 +41,11 @@ scoreboard objectives add hns_winner_found dummy
 # Init Seeker Kill Bonus Time
 scoreboard objectives add hns_kill_bonus_time dummy
 
+# Init Player ID
+scoreboard objectives add hns_player_id dummy
+
+# Init Next Player ID
+scoreboard objectives add hns_next_player_id dummy
 
 # Set Hide n Seek Scoreboard values
 
@@ -83,6 +88,9 @@ scoreboard players set #game hns_winner_found 0
 
 # Set Seeker Kill Bonus Time to 15
 scoreboard players set #game hns_kill_bonus_time 15
+
+# Set next player ID
+scoreboard players set #game hns_next_player_id 1
 
 
 # Finishing off
