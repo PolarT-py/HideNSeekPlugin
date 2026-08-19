@@ -98,7 +98,7 @@ scoreboard players set #game hns_next_player_id 1
 
 
 # Clear everyone's Player ID
-scoreboard players set @a hns_player_id 0
+scoreboard players reset @a hns_player_id
 
 
 # Add bossbar
