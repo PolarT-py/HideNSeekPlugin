@@ -20,3 +20,6 @@ execute if score #game hns_1_sec_signal matches 1 if score #game hns_state match
 
 # Check if a player has an ID
 execute as @a unless score @s hns_player_id matches 1.. run function hide_n_seek:assign_player_id
+
+# Update the Warper kit func
+execute as @a[tag=Warper] run function hide_n_seek:update_warper_kit
